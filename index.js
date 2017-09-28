@@ -5,9 +5,11 @@
 // @description  anything webpage insert iframe and youself controller iframe src
 // @author       jiwei
 // @noframes
-// @match        *://*/*
+////match        *://*/*
+// @include      *://www.cnblogs.com/*
 // @require      https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js
 // @grant        none
+// @exclude      *://www.baidu.com/*
 // ==/UserScript==
 
 (function() {
