@@ -4,6 +4,7 @@
 // @version      0.0.1
 // @description  anything webpage insert iframe and youself controller iframe src
 // @author       jiwei
+// @noframes
 // @match        *://*/*
 // @require      https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js
 // @grant        none
