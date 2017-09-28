@@ -15,10 +15,11 @@
 (function() {
     'use strict';
     // Your code here...
-    var inputEle = "<div id='insetdiv' style='position:absolute;bottom:0;right:0;width:600px;'><input id='pageinpageIptId' type='text' placeholder='请输入网址...' style='height:26px;'/><button style='height:26px;cursor:pointer;' onclick='setIframeSrc()'>确定</button></div>";
+    var inputEle = "<div id='insetdiv' style='position:fixed;bottom:0;right:0;width:600px;'><input id='pageinpageIptId' type='text' placeholder='请输入网址...' style='height:26px;'/><button style='height:26px;cursor:pointer;' onclick='setIframeSrc()'>确定</button></div>";
     $('body').append(inputEle);
     var iframe = $("<iframe>");
     $(iframe).css({
+        "border":"0",
         "width":"600px",
         "height":"200px"
     });
@@ -34,4 +35,7 @@
         iframe.attr("src",ifSrc);
         $('#insetdiv').append(iframe);
     };
+    window.onscroll = function(){
+        
+    }
 })();
