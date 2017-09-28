@@ -35,7 +35,4 @@
         iframe.attr("src",ifSrc);
         $('#insetdiv').append(iframe);
     };
-    window.onscroll = function(){
-        
-    }
 })();
